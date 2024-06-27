@@ -10,9 +10,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 from Test_Data import data
 from Test_Location import location
 import time
-import pytest
 
-class Test_alert_practice:
+
+class Test_alert_practice():
      @pytest.fixture
      def startup(self):
          self.driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
